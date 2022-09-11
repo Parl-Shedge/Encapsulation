@@ -1,23 +1,74 @@
-# Compiled class file
-*.class
+package com.fuel.example;
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+public class Employee 
+{
+	private int eId;
+	private String eName;
+	private String eCity;
+	private String eDept;
+	static float Pi=3.14f;
+	
+	static
+	{
+		System.out.println("static block");
+	}
+	
+	{
+		System.out.println("non-static block");
+	}
+	
+	public Employee()
+	{
+		System.out.println("Constructor");
+	}
+	
+	
+	
+	public int geteId() 
+	{
+		return eId;
+	}
+	public void seteId(int eId) 
+	{
+		this.eId = eId;
+	}
+	public String geteName() 
+	{
+		return eName;
+	}
+	public void seteName(String eName) 
+	{
+		this.eName =eName;
+	}
+	public String geteCity() 
+	{
+		return eCity;
+	}
+	public void seteCity(String eCity) 
+	{
+		this.eCity = eCity;
+	}
+	public String geteDept() 
+	{
+		return eDept;
+	}
+	public void seteDept(String eDept) 
+	{
+		this.eDept = eDept;
+	}
+	
+	public static void Display()
+	{
+		System.out.println("Display method");
+	}
+	public static void main(String[]args)
+	{
+		//System.out.println("Calling");
+		//Employee e1=new Employee();
+		//Employee e2=new Employee();
+		//e1.seteId(50);
+		//System.out.println(e1.geteId());
+		
+	}
+	
+}
