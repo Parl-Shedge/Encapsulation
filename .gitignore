@@ -72,3 +72,35 @@ public class Employee
 	}
 	
 }
+
+
+//Encapsulation Class
+package com.fuel.example;
+
+public class Encapsulation 
+{
+	public static void main(String[]args)
+	{
+		System.out.println("Main method");
+		Employee e1=new Employee();
+	
+		e1.seteId(20);
+		System.out.println(e1.geteId());
+	}
+}
+
+//main method for code
+
+package com.fuel.example;
+
+public class Test 
+{
+	public static void main(String[]args)
+	{
+		System.out.println("main method");
+		Employee e1=new Employee();
+		//e1.setId(50);
+		//System.out.println(e1.getId);
+	}
+
+}
